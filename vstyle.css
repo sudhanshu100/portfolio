@@ -56,6 +56,16 @@ nav ul li{
   display: flex;
   justify-content: space-around;
 }
+@media (max-width:1200px){
+  .first-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .football{
+    height: 100px;
+    width: 100px;
+  }
+}
 .first-left{
   width: 50%;
   margin: 50px 0;
@@ -113,11 +123,6 @@ p{
   background-color: #66BFBF;
   padding-bottom: 20px;
   background-color: #40514E;
-}
-.profile-picture{
-  height: 15%;
-  width: 15%;
-  border-radius: 100%;
 }
 .web-gif{
   height: 25%;
