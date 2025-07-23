@@ -5,13 +5,14 @@ body{
   color: #40514E;
 }
 nav{
-  font-family: 'poppins', sans-serif;
+  /* font-family: 'poppins', sans-serif; */
+  font-size: 17px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 50px;
-  color: white;
-  background-color: #40514E;
+  color: #40514E;
+  background-color: white;
 }
 nav ul{
   display: flex;
@@ -23,7 +24,7 @@ nav ul li{
 }
 .nav-link{
   text-decoration: none;
-  color: white;
+  color: #40514E;
 }
 .sidebar{
   position: fixed;
@@ -49,19 +50,17 @@ nav ul li{
   width: 100%;
   color: #40514E;
 }
-.profile h1{
+/* .profile h1{
   margin-top: 0;
   font-size: 6rem;
-  font-family: 'poppins', sans-serif;
   font-weight:500;
-  /* font-size: 8rem; */
   background: linear-gradient(90deg,#86e5cd,#FFBBBB);
   background-size: 400% 400%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   animation: gradient 5s ease infinite;
-}
+} */
 @keyframes gradient {
   0% {
       background-position: 0% 50%;
@@ -77,9 +76,10 @@ nav ul li{
   color: #4ed4d4;
 }
 .first-section{
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
-  margin: 30px;
+  margin: 60px 200px 50px 200px;
+  /* align-items: center; */
   border-radius: 10px;
   background-color: #596e6a;;
   box-shadow: 3.5px 3.5px 4px rgba(91, 91, 91, 0.5), inset  2px 0px 3px rgba(200, 200, 200, 0.5);
@@ -104,8 +104,7 @@ nav ul li{
   }
 }
 .first-left{
-  width: 50%;
-  margin: 50px 0;
+  padding: 120px 0px 50px 0px;
 }
 .football{
   height: 50%;
@@ -122,27 +121,61 @@ nav ul li{
 }
 .first-right{
   width: 50%;
+
 }
 .first-right img{
   width: 50%;
   height: 80%;
   margin: 50px 0;
+
 }
 
 h1{
-  margin: 50px auto 0 auto;
-  font-family: 'Kalam', cursive;
-  font-family: 'Sacramento', cursive;
-  font-size: 5.624rem;
+  margin: 0px;
+  font-family: 'poppins', sans-serif;
+  font-size: 4rem;
   color: #ffffff;
   line-height: 2;
 }
+
+/* Typewriter effect styling */
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 3px solid #4ed4d4; /* Mint-colored blinking cursor */
+  vertical-align: bottom; /* ✅ Align with "I am" baseline */
+  white-space: nowrap; /* Keeps the content on a single line */
+  color: #4ed4d4; /* Mint color for the text */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+   /* line-height: normal;  */
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { max-width: 0 }
+  to { max-width: 20ch } /* Adjust based on text length */
+}
+
+/* Cursor blinking effect */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: #4ed4d4 }
+}
+
 h2{
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   color: #66BFBF;
   font-weight: normal;
   margin-top: 0;
+}
+.projectsHeading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  margin-top: 80px;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
@@ -162,45 +195,61 @@ p{
   background-color: #40514E;
 }
 .web-gif{
-  height: 200px;
-  width: 220px;
-  float: left;
+  height: 150px;
+  width: 159px;
+  /* float: center; */
   margin-right: 30px;
 }
 .python-gif{
-  height: 200px;
-  width: 200px;
-  float: left;
+  height: 150px;
+  width: 150px;
+  /* float: center; */
   margin-right: 30px;
 }
 .edi-img{
+  height: 150px;
+  width: 150px;
+  /* float: center; */
+  /* margin-left: 30px; */
+  }
+  .vass-logo{
   height: 200px;
   width: 200px;
-  float: right;
+  /* float: center; */
   margin-left: 30px;
   }
 .c-gif{
-  height: 220px;
-  width: 220px;
-  float: right;
+  height: 155px;
+  width: 155px;
+  /* float: left; */
   margin-left: 30px;
   }
-  .fast-gif{
-    height: 180px;
-    width: 180px;
-    float: right;
-    margin-left: 30px;
+.fast-gif{
+  height: 155px;
+  width: 155px;
+    /* float: center; */
+  margin-left: 30px;
+  }
+.githubIcon{
+  height: 30px;
+  width: 30px;
+  }
+.skills{
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      padding: 0 100px 0 100px;
     }
 .skill-row{
-  width: 50%;
+  width: 200px;
   height: 200px;
-  margin: 100px auto 100px auto;
+  margin: 10px;
   padding: 20px;
   text-align: left;
   box-shadow: 3.5px 3.5px 4px rgba(91, 91, 91, 0.5), inset  2px 0px 3px rgba(200, 200, 200, 0.5);
   border-radius: 10px;
 }
-hr{
+.dotted-line{
   border-style: none;
   border-top-style: dotted;
   border-width: 7px;
@@ -209,42 +258,102 @@ hr{
   border-color: #40514E;
   margin: 80px auto 80px auto;
 }
-.btn {
-  background: #66BFBF;
-  background-image: -webkit-linear-gradient(top, #66BFBF, #4ed4d4);
-  background-image: -moz-linear-gradient(top, #66BFBF, #4ed4d4);
-  background-image: -ms-linear-gradient(top, #66BFBF, #4ed4d4);
-  background-image: -o-linear-gradient(top, #66BFBF, #4ed4d4);
-  background-image: linear-gradient(to bottom, #66BFBF, #4ed4d4);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 2%;
+
+/* Footer Section Styling */
+.footerSection {
+    /* background-color: rgba(29, 35, 44, 1); */
+    background-color: #40514E;
+    margin: 100px 0px 0px 0px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 100 ;
+    box-sizing: border-box;
+}
+/* footer Icons Styling */
+.footerIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerIcons img{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+.footer-link {
+  padding-bottom: 0px;
 }
 
-.btn:hover {
-  background: #4ed4d4;
-  background-image: -webkit-linear-gradient(top, #4ed4d4, #66BFBF);
-  background-image: -moz-linear-gradient(top, #4ed4d4, #66BFBF);
-  background-image: -ms-linear-gradient(top, #4ed4d4, #66BFBF);
-  background-image: -o-linear-gradient(top, #4ed4d4, #66BFBF);
-  background-image: linear-gradient(to bottom, #4ed4d4, #66BFBF);
-  text-decoration: none;
+/* Divider Line Styling */
+.divider {
+    border-top: 1px solid #fff;
+    /* Adjusting margins for positioning */
+    margin: 10px 20px 10px 20px;
 }
-.footer-link{
-  margin: 50px 20px 50px 20px;
-  display: inline-block;
-  text-decoration: none;
-  color: white;
+/* Footer Content Container */
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
 }
-.bottom-container a:hover{
-  color: #4ed4d4;
+/* Styling for the Copyright Section */
+.footerContent .copyright {
+    margin: 10px 14px;
 }
+/* Styling for All Links in the Footer */
+.footerContent a {
+    color: #ffff;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "Fira sans";
+    font-weight: 400;
+}
+/* Container for Privacy Policy and Terms of Service Links */
+.footerContent .links {
+    margin: 10px;
+}
+/* Individual Link Padding */
+.footerContent .links a {
+    padding: 0 9px;
+}
+/* Media Queries for Responsiveness */
+/* 1. Tablet and smaller devices */
+@media (max-width: 822px) {
 
+    .footerContent .links {
+        margin: 5px 0; /* Adjust margin for links */
+    }
+    .footerContent a {
+        font-size: 12px; /* Slightly smaller font size */
+    }
+}
+/* 2. Smartphone devices */
+@media (max-width: 600px) {
+    .footerSection { 
+        padding-top: 15px; /* Adjust padding for smaller screens */
+    }
+    .footerContent {
+        padding: 10px; /* Add padding for better spacing */
+    }
+    .footerContent .copyright {
+        margin: 5px 0; /* Adjust margin for copyright */
+    }
+    .footerContent a {
+        font-size: 10px; /* Further reduce font size */
+    }
+    .footerContent .links a {
+        padding: 0 5px; /* Reduce padding for links */
+    }
+}
+@media (max-width: 471px){
+    .footerContent a {
+        font-size: 9px; /* Further reduce font size */
+    }
+}
+@media (max-width: 375px){
+    .footerContent a {
+        font-size: 7px; /* Further reduce font size */
+    }
+}
